@@ -1,0 +1,11 @@
+proxy-groups:
+- name: beri-nama-grup
+  type: select
+  disable-udp: false
+  proxies:
+  - shadowsocks
+  - shadowsocksr
+  - vmess
+  - trojan
+  use:
+  - isikan dari nama proxy provider
