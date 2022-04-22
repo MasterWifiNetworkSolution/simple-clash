@@ -1,7 +1,7 @@
 proxy-providers:
   isinamaproviderkalian:
     type: file
-    path: /test.yaml
+    path: /isi nama file proxy provider kalian.yaml
     health-check:
       enable: true
       interval: 99
