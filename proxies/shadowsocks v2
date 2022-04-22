@@ -1,0 +1,11 @@
+proxies:
+- name: "ss2"
+  type: ss
+  server: server
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: "password"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: bing.com
