@@ -9,8 +9,6 @@ proxy-providers:
 
 rule-providers:
   isi nama rule provider:
-    type: http
+    type: file
     behavior: pilih domain atau ipcidr atau classical
     path: /rule_provider/isi nama file rule provider.yaml
-    url: http://link tujuan/folder/nama file tujuan.yaml
-    interval: 99
