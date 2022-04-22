@@ -6,3 +6,11 @@ proxy-providers:
     enable: true
     url: http://www.gstatic.com/generate_204
     interval: 99
+
+rule-providers:
+  isi nama rule provider:
+    type: http
+    behavior: pilih domain atau ipcidr atau classical
+    path: /rule_provider/isi nama file rule provider.yaml
+    url: http://link tujuan/folder/nama file tujuan.yaml
+    interval: 99
