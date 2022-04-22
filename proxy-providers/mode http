@@ -1,9 +1,9 @@
 proxy-providers:
-  provider1:
+  isinamaproviderkalian:
     type: http
     url: "url"
     interval: 99
-    path: ./provider1.yaml
+    path: ./namaproviderkalian.yaml
     health-check:
       enable: true
       interval: 99
