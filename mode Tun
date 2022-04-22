@@ -5,3 +5,15 @@ tun:
   macOS-auto-detect-interface: true
   dns-hijack:
     - tcp://8.8.8.8:53
+
+pilihan dns hijack
+
+  dns-hijack:
+    - tcp://8.8.8.8:53
+    - 8.8.8.8:1053
+    
+    atau ini
+        
+  dns-hijack:
+    - any:53
+    - tcp://any:53
