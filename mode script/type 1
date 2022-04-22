@@ -1,0 +1,9 @@
+script:
+  code: |
+    def main(ctx, metadata):
+      list = ['test', 'test2']
+      
+      for name in list:
+        if ctx.rule_providers[name].match(metadata):
+          ctx.log('[Script] matched %s' % name)
+          return "DIRECT"
