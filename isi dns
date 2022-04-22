@@ -1,0 +1,8 @@
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host atau fake-ip
+  nameserver:
+
+  fallback:
