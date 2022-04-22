@@ -1,7 +1,7 @@
-rule-providers:
-  isi nama rule provider:
+proxy-providers:
+  isi nama proxy provider:
   type: http
-  path: ./isi nama file rule provider.yaml
+  path: ./isi nama file proxy provider.yaml
     url: http://link tujuan/folder/nama file.yaml
     interval: 99
     health-check:
