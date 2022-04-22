@@ -1,0 +1,7 @@
+tun:
+  enable: true
+  stack: system atau gvisor
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hijack:
+    - tcp://8.8.8.8:53
