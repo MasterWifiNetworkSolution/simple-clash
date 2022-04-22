@@ -1,0 +1,77 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7893
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+ipv6: false
+external-controller: 127.0.0.1:9090
+external-ui: folder
+secret: ""
+interface-name: en0
+routing-mark: 6666
+
+hosts:
+  '*.clash.dev': 127.0.0.1
+  '.dev': 127.0.0.1
+  'alpha.clash.dev': '::1'
+
+profile:
+  store-selected: false
+  store-fake-ip: true
+
+dns:
+  enable: false
+  listen: 0.0.0.0:53
+  ipv6: false
+
+  default-nameserver:
+  - 114.114.114.114
+  - 8.8.8.8
+  
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+
+  fake-ip-filter:
+  - '*.lan'
+  - localhost.ptlogin2.qq.com
+
+  nameserver:
+  - 114.114.114.114 
+  - 8.8.8.8
+  - tls://dns.rubyfish.cn:853
+  - https://1.1.1.1/dns-query
+  - dhcp://en0
+
+  fallback:
+  - tcp://1.1.1.1
+
+  fallback-filter:
+  geoip: true
+  geoip-code: CN
+  ipcidr:
+  - 240.0.0.0/4
+  domain:
+  - '+.google.com'
+  - '+.facebook.com'
+  - '+.youtube.com'
+
+  nameserver-policy:
+  'www.baidu.com': '114.114.114.114'
+  '+.internal.crop.com': '10.0.0.1'
+  
+  rules:
+  - DOMAIN-SUFFIX,google.com,auto
+  - DOMAIN-KEYWORD,google,auto
+  - DOMAIN,google.com,auto
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - GEOIP,CN,DIRECT
+  - DST-PORT,80,DIRECT
+  - SRC-PORT,7777,DIRECT
+  - RULE-SET,apple,REJECT
+  - MATCH,GLOBAL
