@@ -1,0 +1,4 @@
+payload:
+  - '.blogger.com'
+  - '*.*.microsoft.com'
+  - 'books.itunes.apple.com'
