@@ -1,0 +1,6 @@
+script:
+  code: |
+    def main(ctx, metadata):
+      code = ctx.geo_ip(ip)
+      if code == 'CN' or code == 'LAN':
+        return "DIRECT"
