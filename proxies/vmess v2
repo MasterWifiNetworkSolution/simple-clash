@@ -1,0 +1,15 @@
+proxies:
+- name: "vmess-h2"
+  type: vmess
+  server: server
+  port: 443
+  uuid: uuid
+  alterId: 32
+  cipher: auto
+  network: h2
+  tls: true
+  h2-opts:
+    host:
+      - http.example.com
+      - http-alt.example.com
+      path: /
