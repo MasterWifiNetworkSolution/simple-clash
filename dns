@@ -1,0 +1,56 @@
+dns:
+  enable: true                   # set true to enable dns (default is false)
+  
+  ipv6: false                    # default is false
+  
+  listen: 0.0.0.0:53
+  
+# nameserver-policy:             # lookup domain through assigned nameserver
+
+  # 'www.baidu.com': '114.114.114.114'
+  
+  # '+.internal.crop.com': '10.0.0.1'
+  
+  default-nameserver:            # resolve dns nameserver host, should fill pure IP
+                                 # aka Bootstrap DNS
+    - 114.114.114.114
+      
+    - 8.8.8.8
+      
+  enhanced-mode: redir-host      # or fake-ip
+  
+  fake-ip-range: 198.18.0.1/16   # if you don't know what it is, don't change it
+  
+  use-hosts: true                # lookup hosts and return IP record
+  
+  fake-ip-filter:                # fake ip white domain list, aka Always Real IP
+  
+    - '*.lan'
+    
+    - localhost.ptlogin2.qq.com
+    
+  nameserver:
+    - 114.114.114.114
+    
+    - tls://dns.rubyfish.cn:853  # dns over tls
+    
+    - https://1.1.1.1/dns-query  # dns over https
+    
+    - dhcp://en0 # dns from dhcp
+    
+  fallback:                      # concurrent request with nameserver, 
+                                 # fallback used when GEOIP country isn't CN
+    - tcp://1.1.1.1
+    
+  fallback-filter:
+  
+    geoip: true                  # default
+    
+    geoip-code: CN
+    
+    ipcidr:                      # ips in these subnets will be considered polluted
+      - 240.0.0.0/4
+   #domain:
+    # - '+.google.com'
+    # - '+.facebook.com'
+    # - '+.youtube.com'
