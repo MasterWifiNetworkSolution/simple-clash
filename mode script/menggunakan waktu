@@ -1,0 +1,9 @@
+script:
+  code: |
+    def main(ctx, metadata): 
+      now = time.now()
+      if metadata["src_ip"] == "ip" and now.hour >= 18 and now.hour <= 22:
+        return "REJECT"
+
+      return "DIRECT"
+    
