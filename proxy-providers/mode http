@@ -3,7 +3,7 @@ proxy-providers:
     type: http
     url: "url"
     interval: 99
-    path: ./namaproviderkalian.yaml
+    path: ./isi nama file provider kalian.yaml
     health-check:
       enable: true
       interval: 99
