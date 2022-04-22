@@ -1,0 +1,6 @@
+ script:
+  code: |
+    def main(ctx, metadata): 
+      ip = ctx.resolve_ip(metadata["host"])
+      if ip == "":
+        return "DIRECT"
