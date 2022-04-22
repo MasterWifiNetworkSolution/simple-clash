@@ -1,0 +1,14 @@
+proxies:
+- name: trojan-grpc
+  server: server
+  port: 443
+  type: trojan
+  password: "example"
+  network: ws
+  sni: example.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /path
+  headers:
+    Host: example.com
