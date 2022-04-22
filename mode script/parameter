@@ -1,0 +1,6 @@
+resolve_ip: (host: string) => string // ip string
+resolve_process_name: (metadata: Metadata) => string
+geoip: (ip: string) => string // country code
+log: (log: string) => void
+proxy_providers: Record<string, Array<{ name: string, alive: boolean, delay: number }>>
+rule_providers: Record<string, { match: (metadata: Metadata) => boolean }>
