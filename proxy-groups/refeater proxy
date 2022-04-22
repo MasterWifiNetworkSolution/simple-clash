@@ -1,0 +1,9 @@
+proxy-groups:
+- name: "refeater-master"
+  type: relay
+  proxies:
+  - isi nama akun 1
+  - isi nama akun 2
+  - isi nama akun 3
+  use:
+  - isi nama proxy provider kalian
