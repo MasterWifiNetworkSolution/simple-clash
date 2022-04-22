@@ -1,0 +1,19 @@
+proxies:
+- name: "vmess"
+  type: vmess
+  server: server
+  port: 443
+  uuid: uuid
+  alterId: 32
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: example.com
+  network: ws
+  ws-opts:
+    path: /path
+  headers:
+    Host: v2ray.com
+  max-early-data: 2048
+  early-data-header-name: Sec-WebSocket-Protocol
