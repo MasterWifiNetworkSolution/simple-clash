@@ -1,0 +1,9 @@
+ script:
+  code: |
+    def main(ctx, metadata): 
+    rejectkeywordlist = ["adservice"]
+    for rejectkeyword in rejectkeywordlist:
+      if rejectkeyword in metadata["host"]:
+        ctx.log('[Script] matched keyword %s use reject' % rejectkeyword)
+        return "REJECT"
+    
