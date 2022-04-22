@@ -1,0 +1,8 @@
+proxy-providers:
+  isinamaproviderkalian:
+    type: file
+    path: /test.yaml
+    health-check:
+      enable: true
+      interval: 99
+      url: http://www.gstatic.com/generate_204
