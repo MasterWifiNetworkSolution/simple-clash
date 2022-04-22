@@ -1,0 +1,10 @@
+proxies:
+- name: "socks"
+  type: socks5
+  server: server
+  port: 443
+  username: username
+  password: password
+  tls: true
+  skip-cert-verify: true
+  udp: true
