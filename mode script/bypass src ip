@@ -1,0 +1,6 @@
+ script:
+  code: |
+    def main(ctx, metadata): 
+      srcport = metadata["src_port"]
+      if (3000 < srcport and srcport < 4000):
+        return "DIRECT"
