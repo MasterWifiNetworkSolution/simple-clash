@@ -1,0 +1,17 @@
+proxies:
+- name: "ss3"
+  type: ss
+  server: server
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: "password"
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+  tls: true
+  skip-cert-verify: true
+    host: bing.com
+    path: "/"
+  mux: true
+  headers:
+    custom: value
