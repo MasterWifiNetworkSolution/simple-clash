@@ -1,6 +1,6 @@
 proxies:
 - name: trojan-grpc
-  server: server
+  server: bug-anda.com
   port: 443
   type: trojan
   password: "example"
@@ -11,4 +11,4 @@ proxies:
   ws-opts:
     path: /path
   headers:
-    Host: example.com
+    Host: server.com
