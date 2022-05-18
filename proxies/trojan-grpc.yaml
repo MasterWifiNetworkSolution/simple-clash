@@ -1,14 +1,12 @@
 proxies:
 - name: trojan-grpc
-  server: bug-anda.com
+  server: id1.masterwifi.tech
   port: 443
   type: trojan
-  password: "example"
-  network: ws
-  sni: example.com
+  password: 35a42597-200e-4a1b-9ecd-d0f6cb786210
+  network: grpc
+  sni: bug-isi.disini.com
   skip-cert-verify: true
   udp: true
-  ws-opts:
-    path: /path
-  headers:
-    Host: server.com
+  grpc-opts:
+    grpc-service-name: grpc-masterwifi-tech
