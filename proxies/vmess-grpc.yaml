@@ -1,14 +1,14 @@
 proxies:
 - name: vmess-grpc
-  server: server
+  server: id1.masterwifi.xyz
   port: 443
   type: vmess
-  uuid: uuid
-  alterId: 32
+  uuid: 12ab-34cd-56ef-7g8h9i2001
+  alterId: 0
   cipher: auto
   network: grpc
   tls: true
-  servername: example.com
+  servername: bugmu-isi.disini.com
   skip-cert-verify: true
   grpc-opts:
-    grpc-service-name: "example"
+    grpc-service-name: "master-grpc-config"
