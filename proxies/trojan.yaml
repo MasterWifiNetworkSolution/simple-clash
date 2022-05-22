@@ -1,11 +1,11 @@
 proxies:
-- name: "trojan"
+- name: isikan-nama-akun
   type: trojan
-  server: server
+  server: id1.masterwifi.xyz
   port: 443
-  password: yourpsk
+  password: 12ab-34cd-56ef-7g8h9ijklm
   udp: true
-  sni: example.com
+  sni: bugmu-isi.disini.com
   alpn:
     - h2
     - http/1.1
