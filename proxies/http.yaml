@@ -1,10 +1,10 @@
 proxies:
-- name: "http"
+- name: isikan-nama-akunmu
   type: http
-  server: server
+  server: id1.masterwifi.xyz
   port: 443
-  username: username
-  password: password
-  tls: true # https
+  username: master
+  password: master
+  tls: true
   skip-cert-verify: true
-  sni: custom.com
+  sni: bugmu-isi.disini.com
