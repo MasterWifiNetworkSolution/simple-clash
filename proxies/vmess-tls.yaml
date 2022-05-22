@@ -1,19 +1,19 @@
 proxies:
-- name: "vmess"
+- name: isikan-nama-akunmu
   type: vmess
-  server: server
+  server: sg1.masterwifi.xyz
   port: 443
-  uuid: uuid
-  alterId: 32
+  uuid: 12ab-34cd-56ef-7h8i9j2001
+  alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: example.com
+  servername: bugmu-isi.disini.com
   network: ws
   ws-opts:
-    path: /path
+    path: /masterwifi
   headers:
-    Host: v2ray.com
+    Host: bugmu-isi.disini.com
   max-early-data: 2048
   early-data-header-name: Sec-WebSocket-Protocol
