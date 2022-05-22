@@ -1,10 +1,10 @@
 proxies:
-- name: "socks"
+- name: isikan-nama-akunmu
   type: socks5
-  server: server
+  server: id1.masterwifi.xyz
   port: 443
-  username: username
-  password: password
+  username: master
+  password: master
   tls: true
   skip-cert-verify: true
   udp: true
